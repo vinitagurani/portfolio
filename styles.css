@@ -1,0 +1,171 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+.progress{
+    height: 3px;
+    background-color: red;
+    animation:load 1s ease-in-out 1 ;
+}
+@keyframes load {
+    0%{
+        width: 0;
+    }
+    50%{
+        width:70vw;
+    }
+    100%{
+        width:100vw;
+        display: none;
+    }
+}
+ a:active {
+    text-decoration: underline;
+}
+ a:hover{
+    color: blue;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.hero {
+    background-color: rgba(255, 200, 200, 0.3);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(./shapes.jpg);
+    background-repeat:repeat-y;
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-size:auto;
+    /* background-color: blue; */
+    /* position:relative; */
+}
+.hero header{
+    text-align: right;
+    background-color: darkgray;
+    /* color: antiquewhite; */
+    
+}
+.hero header nav ul li {
+    display: inline-block;
+    /* list-style: none; */
+    margin: 10px 20px;
+    border: none;
+    
+}
+.detail {
+    margin-left: 3%;
+    margin-top: 18%;
+    /* background-color: aqua; */
+}
+.detail h1 {
+    font-weight: bold;
+    margin-bottom: 2%;
+    font-size: 50px;
+}
+.detail span{
+    color: orange
+}
+.detail p{
+    color: black;
+}
+.detail a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+.detail a:hover{
+color: blue;
+}
+.images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    /* background-color: lightcoral; */
+}
+
+.images .girl{
+    height: 100%;
+    position: relative;
+    left: 50%;
+    right: inherit;
+    background-color: aqua;
+    bottom: 0%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    border-radius: 50px;
+    
+}
+.girl:hover {
+left: 45%;
+
+}
+.images .github{
+    width: 15%;
+    position: relative;
+    bottom: 50%;
+    left: 25%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    
+}
+.github:hover {
+    width: 15.5%;
+    rotate: y 45deg;
+}
+.images .instagram {
+    width: 15%;
+    position: relative;
+    bottom: 35%;
+    left: 10%;
+    transition-property:all;
+    transition-duration: 0.5s;
+}
+.instagram:hover {
+    width:15.5%;
+}
+.images .linkedin {
+    width: 10%;
+    position: relative;
+    bottom: 20%;
+    left: -3%;
+    transition-property: width;
+    transition-duration: 0.5s;
+}
+.linkedin:hover{
+    width: 10.5%;
+}
+.images .phone{
+    width: 8%;
+    position: relative;
+    bottom: 8%;
+    left: -13%;
+    transition-property: width;
+    transition-duration: 0.5s;
+}
+.phone:hover {
+    width: 8.5%;
+}
+.images .mail{
+    width: 9.5%;
+    position: relative;
+    bottom: 76%;
+    left: 76%;
+    transition-property: width;
+    transition-duration: 0.5s;
+}
+.mail:hover {
+    width: 10%;
+}
